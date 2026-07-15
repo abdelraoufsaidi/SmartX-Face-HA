@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion au service SMARTX Face",
+        "description": "Adresse du container qui exécute la reconnaissance faciale (RTSP + InsightFace).",
+        "data": {
+          "service_host": "Adresse IP / nom d'hôte du container",
+          "service_port": "Port"
+        }
+      },
+      "features": {
+        "title": "Ouverture automatique",
+        "description": "Si activé, la porte s'ouvre automatiquement dès qu'un visage reconnu est détecté.",
+        "data": {
+          "auto_open_door": "Activer l'ouverture automatique de la porte par reconnaissance faciale"
+        }
+      },
+      "camera_source": {
+        "title": "Source de la caméra",
+        "description": "La reconnaissance faciale utilise-t-elle la caméra intégrée au VTO, ou une caméra IP séparée ?",
+        "data": {
+          "camera_source": "Source caméra"
+        }
+      },
+      "camera": {
+        "title": "Caméra IP dédiée à la reconnaissance",
+        "data": {
+          "cam_ip": "Adresse IP de la caméra",
+          "cam_username": "Utilisateur",
+          "cam_password": "Mot de passe",
+          "cam_channel": "Channel",
+          "cam_subtype": "Subtype (0=HD, 1=léger)"
+        }
+      },
+      "vto": {
+        "title": "VTO Dahua",
+        "description": "Utilisé pour l'ouverture de porte (et le flux caméra si tu as choisi 'Caméra du VTO').",
+        "data": {
+          "vto_ip": "Adresse IP du VTO",
+          "vto_username": "Utilisateur",
+          "vto_password": "Mot de passe",
+          "vto_channel": "Channel",
+          "vto_subtype": "Subtype (0=HD, 1=léger)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre le service SMARTX Face à cette adresse.",
+      "cannot_push_config": "Le service a refusé la configuration envoyée."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Modifier la configuration SMARTX Face",
+        "data": {
+          "auto_open_door": "Activer l'ouverture automatique de la porte",
+          "camera_source": "Source caméra",
+          "cam_ip": "Adresse IP de la caméra (si séparée)",
+          "cam_username": "Utilisateur caméra",
+          "cam_password": "Mot de passe caméra",
+          "cam_channel": "Channel caméra",
+          "cam_subtype": "Subtype caméra (0=HD, 1=léger)",
+          "vto_ip": "Adresse IP du VTO",
+          "vto_username": "Utilisateur VTO",
+          "vto_password": "Mot de passe VTO",
+          "vto_channel": "Channel VTO (si caméra = VTO)",
+          "vto_subtype": "Subtype VTO (si caméra = VTO)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "domain": "smartx_face",
+  "name": "SMARTX Face Recognition",
+  "version": "1.0.0",
+  "documentation": "https://github.com/abdelraoufsaidi/SmartX-Face-HA",
+  "requirements": ["requests"],
+  "codeowners": ["@abdelraoufsaidi"],
+  "config_flow": true,
+  "iot_class": "local_polling"
+}
